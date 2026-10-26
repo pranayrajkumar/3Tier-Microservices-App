@@ -40,9 +40,12 @@ sudo mv /tmp/eksctl /usr/local/bin/
 
 # Verify
 eksctl version
+install eks cluster using 
+
+eksctl create cluster --name pranay-cluster --region us-east-1 --node-type t3.medium  --zones us-east-1a,us-east-1b
 2D — Connect kubectl to your EKS cluster
 bashaws eks update-kubeconfig \
-  --region ap-south-1 \
+  --region us-east-1 \
   --name pranay-cluster
 
 # Verify nodes are visible
